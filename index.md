@@ -6,8 +6,8 @@ title: "Privacy Policy - Grocery Bill Checker"
 # Privacy Policy for Grocery Bill Checker
 
 <div class="meta">
-  <strong>Last Updated:</strong> August 21, 2026 &nbsp;|&nbsp;
-  <strong>Version:</strong> 1.0 &nbsp;|&nbsp;
+  <strong>Last Updated:</strong> August 24, 2026 &nbsp;|&nbsp;
+  <strong>Version:</strong> 1.1 &nbsp;|&nbsp;
   <strong>Contact:</strong> <a href="mailto:mymuqeet@gmail.com">mymuqeet@gmail.com</a>
 </div>
 
@@ -50,6 +50,12 @@ The following data is stored **only on your device** using Android's encrypted s
 
 ---
 
+### 📷 Camera Usage (Barcode Scanner)
+
+The App requests camera permission **only** for the optional barcode scanner feature. Camera frames are processed **live on your device** using ML Kit and are never saved, stored, or uploaded anywhere.
+
+---
+
 ## ⚙️ How We Use Your Data
 
 All data processing occurs **locally on your device**. We use your data solely to:
@@ -70,7 +76,13 @@ All data processing occurs **locally on your device**. We use your data solely t
 
 ### Google AdMob (Advertising)
 
-The free version of the app displays ads via **Google AdMob**.
+The free version of the app displays ads via **Google AdMob** in three formats:
+
+- **Banner ads** — small ads at the bottom of screens
+- **Interstitial ads** — shown occasionally after you complete an action (e.g., saving a shopping session)
+- **App Open ads** — shown when opening or returning to the app
+
+**Consent (GDPR/EEA/UK):** Before any ads are shown, users in these regions are presented with a **Google consent form (User Messaging Platform)** where they can accept, reject, or customize ad choices. You can change your choice anytime via **Settings → Privacy Options** in the app.
 
 **What AdMob may collect:**
 - Advertising ID (resettable in Android Settings → Google → Ads)
@@ -81,15 +93,14 @@ The free version of the app displays ads via **Google AdMob**.
 **AdMob does NOT receive:** Your shopping data, personal information, or any app-specific content.
 
 **Opt-out options:**
-- Android Settings → Google → Ads → "Opt out of Ads Personalization"
-- Reset Advertising ID in the same menu
-- Upgrade to Premium (removes ads entirely)
+- In-app: Settings → Privacy Options (manage Google ad consent)
+- Android Settings → Google → Ads → "Delete / Opt out of Ads Personalization"
 
 [AdMob Privacy Policy](https://policies.google.com/technologies/ads)
 
 ### Google Play Services
 
-Required for AdMob functionality and license verification (if Premium).
+Required for AdMob functionality and app security services.
 
 ### ML Kit (On-Device)
 
@@ -107,8 +118,9 @@ Used for **barcode scanning** and **text recognition (OCR)**.
 |------------|----------------|
 | **At Rest** | Room Database + EncryptedSharedPreferences (AES-256-GCM) |
 | **In Transit** | HTTPS only (Network Security Config: `cleartextTrafficPermitted=false`) |
-| **Backup** | User-controlled JSON export/import via system file picker |
-| **Cloud Sync** | None — no cloud backup, no account system |
+| **Manual Backup** | User-controlled JSON export/import via system file picker |
+| **Android Auto-Backup** | Standard Android device backup (Google Drive) may include your app data as configured in your device settings; encrypted preferences are excluded |
+| **Cloud Sync** | None — no own cloud, no account system |
 | **Access Control** | Optional PIN + Biometric (fingerprint/face) app lock |
 
 ---
@@ -124,8 +136,7 @@ You have full control over your data:
 | **Delete specific items** | Swipe to delete in Cart, History, Favorites |
 | **Delete all shopping data** | Settings → Danger Zone → Delete Shopping Data |
 | **Reset app completely** | Android Settings → Apps → Grocery Bill Checker → Clear Data |
-| **Disable ads** | Upgrade to Premium (in-app purchase) |
-| **Opt-out of ad personalization** | Android Settings → Google → Ads |
+| **Manage ad consent** | Settings → Privacy Options, or Android Settings → Google → Ads |
 
 ---
 
